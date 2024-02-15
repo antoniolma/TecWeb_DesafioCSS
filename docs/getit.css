@@ -97,112 +97,117 @@ body {
 }
 
 
- .card-color-1{
-   background-color: #ead3a7
- }
- .card-color-2{
-   background-color: #9de0f5
- }
- .card-color-3{
-   background-color: #ef89ba
- }
- .card-color-4{
-   background-color: #fae890
- }
- .card-color-5{
-   background-color: #abe9c1
- }
- 
- /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
- .card{
-   /* height: 10rem; */
-   width: 15rem;
- 
-   border-radius: 0.5rem;
-   box-shadow: 5px 10px 10px -7px #696969;
- } 
- 
- .card-container{
-   display: flex;
- 
-   margin-left: 3.5rem;    /* Espacamento das bordas*/
-   margin-right: 3.5rem;
-   margin-top: 3.5rem;
-   margin-bottom: 3.5rem;
-   
-   flex-direction: row; /* Define orientacao horizontal */ 
-   flex-wrap: wrap;
-   justify-content: space-around;
- 
-   gap: 17px;
- }
- 
- .card-title{
-   font-family: 'Permanent Marker', cursive;
-   font-size:1.3em;
-   
-   padding-left: 1.0rem;    /* Espacamento das bordas*/
-   padding-right: 1.0rem;
-   padding-top: 0.7rem;
-   padding-bottom: 1.0rem;
- }
- 
- .card-content{
-   font-family: 'Permanent Marker', cursive;
-   font-size:1.05em;
-   color: #4c4c4c;
- 
-   padding-left: 1.0rem;    /* Espacamento das bordas*/
-   padding-right: 1.0rem;
-   padding-top: 1rem;
-   padding-bottom: 0.7rem;
- /* 
-   margin: 1rem;
-   margin-bottom: 0.7rem; */
- 
-   /* text-align:center; */
- }
- 
- .card-rotation-1{
-   transform: rotate(355deg)
- }
- 
- .card-rotation-2{
-   transform: rotate(356deg)
- }
- 
- .card-rotation-3{
-   transform: rotate(357deg)
- }
- 
- .card-rotation-4{
-   transform: rotate(358deg)
- }
- 
- .card-rotation-5{
-   transform: rotate(359deg)
- }
- 
- .card-rotation-6{
-   transform: rotate(0deg)
- }
- 
- .card-rotation-7{
-   transform: rotate(1deg)
- }
- 
- .card-rotation-8{
-   transform: rotate(2deg)
- }
- 
- .card-rotation-9{
-   transform: rotate(3deg)
- }
- 
- .card-rotation-10{
-   transform: rotate(4deg)
- }
- 
- .card-rotation-11{
-   transform: rotate(5deg)
- }
+.card-color-1{
+  background-color: #ead3a7
+}
+.card-color-2{
+  background-color: #9de0f5
+}
+.card-color-3{
+  background-color: #ef89ba
+}
+.card-color-4{
+  background-color: #fae890
+}
+.card-color-5{
+  background-color: #abe9c1
+}
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.card{
+  display: flex;
+  /* height: 10rem; */
+  width: 15rem;
+  min-height: 9rem;
+  min-width: 15rem;
+
+  border-radius: 0.5rem;
+  box-shadow: 5px 10px 10px -7px #696969;
+
+  flex-direction: column;
+} 
+
+.card-container{
+  display: flex;
+
+  margin: 3rem;    /* Espacamento das bordas*/
+  
+  flex-direction: row; /* Define orientacao horizontal */ 
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  gap: 17px;
+}
+
+.card-title{
+  font-family: 'Permanent Marker', cursive;
+  font-size:1.3em;  
+  
+  padding-left: 1.0rem;    /* Espacamento das bordas*/
+  padding-right: 1.0rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.2rem;
+
+  justify-self: flex-start;
+  /* flex-basis: 30%; */
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Permanent Marker', cursive;
+  font-size:1.05em;
+  color: #4c4c4c;
+
+  padding-left: 1.0rem;    /* Espacamento das bordas*/
+  padding-right: 1.0rem;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-grow:2;
+}
+
+.card-rotation-1{
+  transform: rotate(355deg)
+}
+
+.card-rotation-2{
+  transform: rotate(356deg)
+}
+
+.card-rotation-3{
+  transform: rotate(357deg)
+}
+
+.card-rotation-4{
+  transform: rotate(358deg)
+}
+
+.card-rotation-5{
+  transform: rotate(359deg)
+}
+
+.card-rotation-6{
+  transform: rotate(0deg)
+}
+
+.card-rotation-7{
+  transform: rotate(1deg)
+}
+
+.card-rotation-8{
+  transform: rotate(2deg)
+}
+
+.card-rotation-9{
+  transform: rotate(3deg)
+}
+
+.card-rotation-10{
+  transform: rotate(4deg)
+}
+
+.card-rotation-11{
+  transform: rotate(5deg)
+}

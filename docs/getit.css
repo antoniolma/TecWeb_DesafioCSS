@@ -221,9 +221,11 @@ body {
   width: 60vh; 
   height: 16vh;
   padding: 0.5% 0.5%;
-  box-shadow: 5px 8px 10px 2px #b3b3b3;
+  box-shadow: 5px 8px 10px 2px #888888;
   justify-content: space-between;
   margin-top: 7vh;
+  border-radius: 8px;
+  resize: none;
 }
 
 .form-card-title{
@@ -239,6 +241,7 @@ body {
   font-size: 1.1em;
   border: none;
   margin-left: 4px;
+  resize: none;
 }
 
 .container{
